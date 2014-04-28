@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteBase /saso2_3/
+RewriteRule !\.(pdf|ico|gif|jpg|png|css|html|xml)$ index.php

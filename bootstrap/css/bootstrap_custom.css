@@ -1,0 +1,21 @@
+.navbar *, .navbar-inverse ,.navbar-inner{
+    /*background-color:#00e !important;*/
+    background-image: linear-gradient(to bottom, #245, #356) !important;
+}
+a.brand{
+    color:#fff !important;
+}
+td.number, th.number{
+    text-align:right !important;
+}
+p.reset{
+    margin-top:5em !important;
+}
+p.reset a{
+    padding:0.5em !important;
+    border:dotted #f00 2px !important;
+}
+p.reset input{
+    border:dotted #f00 2px !important;
+}
+
