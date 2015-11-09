@@ -95,7 +95,7 @@ function isubmitCheck(input,submit){
 </tr>
 </table>
 
-<?php if('' != $colormp->getImage($concatId, $colorCode)['type']){ ?>
+<?php $type = $colormp->getImage($concatId, $colorCode);if('' != $type['type']){ ?>
 <img src="<?php echo $this->_linkTo('image/getImage/item/' . $concatId . '/color/' . $colorCode); ?>">
 <?php }else{ ?>
 </p>画像はありません。</p>

@@ -6,7 +6,7 @@
 <p><?php echo $item->concatId; ?>『<?php echo $item->itemName; ?>』
 <?php echo $colorName . '(' . $url->getRequest('color') . ')'; ?>
 </p>
-<?php if(null != $colormp->getImage($url->getRequest('item'), $url->getRequest('color'))['type']){ ?>
+<?php $type = $colormp->getImage($url->getRequest('item'), $url->getRequest('color'));if(null != $type['type']){ ?>
 <img src="<?php echo $this->_linkTo('image/getImage/item/' . $url->getRequest('item') . '/color/' . $url->getRequest('color')); ?>" alt="<?php echo $item->itemName . 'の' .$colorName . '(' . $url->getRequest('color') . ')'; ?>">
 <?php }else{ ?>
 <p>画像はありません。</p>

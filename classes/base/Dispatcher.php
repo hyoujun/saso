@@ -9,7 +9,8 @@ class Dispatcher{
     }
     public function dispatch(){
         $param = preg_replace('/\/?$/', '', $_SERVER['REQUEST_URI']);
-        $param = preg_replace('/'.PROGRAM_DIR.'/', '', $param);
+        $program_dir = preg_replace('/\//','\/',PROGRAM_DIR);
+        $param = preg_replace('/'.$program_dir.'/', '', $param);
         $param = preg_replace('/^\/*/', '', $param);
         
         $params = array();

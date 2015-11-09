@@ -17,10 +17,10 @@
 </tr>
 <?php
 foreach($colormp->findByConcatId($item->concatId) as $colorValue){
-    foreach($sizeNameArray as $value){
+    foreach($sizeNameArray as $key => $value){
 ?>
 <tr>
-<td><?php echo $item->concatId . $colorValue->colorCode . $value; ?>
+<td><?php echo $item->concatId . $colorValue->colorCode . $key; ?>
 <td><?php echo $item->itemName; ?></td>
 <td><?php echo $colorValue->colorName . '(' . $colorValue->colorCode . ')'; ?></td>
 <td><?php echo $value; ?>

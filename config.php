@@ -2,7 +2,7 @@
 const
 //パス
      DOCUMENT_ROOT = '/public_html/'
-    ,PROGRAM_DIR = 'saso2_3'
+    ,PROGRAM_DIR = 'saso2_3_1'
 //データベース
     ,DSN      = 'mysql:dbname=saso_db;host=localhost'
     ,USER     = 'saso_user'
@@ -10,6 +10,6 @@ const
 //表示商品数
     ,OUTPUT_ROW = 10
 
-    ,VERSION = 2.3
+    ,VERSION = '2.3.1'
     ;
     
